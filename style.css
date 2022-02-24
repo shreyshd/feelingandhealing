@@ -1,0 +1,853 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.home-header{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), #F5F5DD);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 175px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+} 
+
+.home-namebtn{
+    width: 100%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-namebtn h1{
+    font-size: 75px;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-namebtn p{
+    margin: 25px 0 40px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second-section{
+    min-height: 30vh;
+    width: 100%;
+    background: linear-gradient(#F5F5DD, #FAF0BF);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.second-sectiontext h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F4F4F;
+    text-shadow: 0 0 4px #fff;
+}
+
+.homeprob-btn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 16px Bold;
+    background: #a1785c;
+    position: relative;
+    float: center;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.homeprob-btn:hover{
+    border: none;
+    background: #795644;
+    transition: 0.5s;
+}
+
+.homesol-btn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #a1785c;
+    position: relative;
+    float: center;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.homesol-btn:hover{
+    border: none;
+    background: #795644;
+    transition: 0.5s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 900px){
+    .home-header{
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .home-namebtn h1{
+        font-size: 35px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-namebtn p{
+        font-size: 25px;
+    }
+    
+    .homeprob-btn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .homesol-btn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #F5E4CC;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        border-left: 3px solid #000;
+    }
+    nav .fa{
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: default;
+    }
+
+    .second-sectiontext h2{
+        font-size: 25px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+}
+
+/*-----Who We Are Home Page---*/
+
+.third-section{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(245, 228, 204, 0.4), rgba(245, 228, 204, 0.4)),url(images/HomeWhoWeAreBackground.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.third-section h1{
+    font-size: 40px;
+    display: block;
+    background: none;   
+    font-stretch: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.third-section p1{
+    font-size: 20px;
+    display: block;
+    background: none;  
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: rgb(128, 96, 77);
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: 1px;
+}
+
+.third-section p2{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    display: block;
+    background: none;
+    line-height: 26px;
+}
+
+.aboutus-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #a1785c;
+    position: relative;
+    float: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.aboutus-btn:hover{
+    border: none;
+    background: #795644;
+    transition: 0.25s;
+}
+
+.third-sectionwhoweare{
+    flex-basis: 31%;
+    background: rgba(255,255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+.third-sectionwhoweare:hover{
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+
+@media(max-width: 700px){
+    .third-section h1{
+        font-size: 30px;
+    }
+    
+    .third-section p1{
+        font-size: 20px;
+    }
+    
+    .third-sectionwhoweare{
+    flex-basis: 31%;
+    background: rgba(255,255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 12px;
+    transition: 0.5s;        
+    }
+}
+
+/*-------ABOUT US PAGE------*/
+
+.aboutus-header{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), #FAF0BF);
+    text-align: center;
+    color: #000;
+}
+
+.aboutus-header h1{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 14px;
+    letter-spacing: 5x;
+    margin-top: 1%;
+}
+.aboutus-header p1{
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.aboutus-facts{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(252, 232, 130, 0.2), rgba(252, 232, 130, 0.2)), url(images/aboutus2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.aboutus-facts h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-facts p1{
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+
+.aboutus-factsbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #a1785c;
+    position: relative;
+    float: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.aboutus-factsbtn:hover{
+    border: none;
+    background: #795644;
+    transition: 0.5s;
+}
+
+.row{
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1{
+    flex-basis: 31%;
+    background: #FAF0BF;
+    box-sizing: border-box;
+    border-radius: 9px;
+    margin-bottom: 4%;
+    padding: 20px 12px;
+    transition: 0.5s
+}
+
+.col1:hover{
+    box-shadow: 0 0 30px 3px rgba(0,0,0,0.7);
+}
+
+.aboutus-facts h2{
+    color: black;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.aboutus-facts p{
+    color: black; 
+    text-align: center;
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.aboutus-facts p2{
+    color: white;
+    font-size: 18px;
+    text-align: center; 
+}
+
+@media(max-width: 700px){
+    .aboutus-header h1{
+        font-size: 40px;
+    }
+    .aboutus-header p1{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .aboutus-header{
+        min-height: 110vh;
+        max-height: auto;
+    }
+    .aboutus-facts h1{
+        font-size: 40px;
+    }
+    .aboutus-facts p1{
+    font-size: 18px;
+    margin-top: 10%;
+    margin-left: 25px;
+    margin-right: 25px;
+        display: block;
+    }
+    
+    .aboutus-factsbtn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;   
+    }
+}
+
+/*------Problems-----*/
+
+.problems-header{
+    min-height: 200vh;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255), #F5E4CC, #FAF0BF, #ffffff);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.problems-header h1{
+    font-size: 72px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.problems-header p1{
+    font-size: 25px;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.problems-header h2{
+    font-size: 50px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 700px){
+    .problems-header h1{
+        font-size: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .problems-header p1{
+        font-size: 20px;
+    }
+    .problems-header h2{
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .solimg1{
+        margin: 0%;
+        width: 80%;
+    }
+   
+    
+    .flowchartimg{
+        max-width: 100%;
+        display: block;
+        
+    }
+}
+/*-----Solutions-----*/
+
+.solutions-header{
+    min-height: 200vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), #F5E4CC);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.solutions-header h1{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.solutions-header p1{
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+}
+.foodcol h1{
+    display: inline-block;
+    margin-left: 10%;
+}
+.foodcol p2{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+@media(max-width: 700px){
+    .solutions-header h1{
+        font-size: 40px;
+    }
+    .solutions-header p1{
+        font-size: 25px;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .foodcol p2{
+        margin-left: 0%;
+    }
+}
+
+.solcol1{
+    text-align: left;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solcol1 h1{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.solcol1 p2{
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 10%
+}
+
+.psychopic{
+    margin: 0%;
+}
+
+.solcol2{
+    text-align: left;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solcol2 h1{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.solcol2 p2{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foodpic{
+    margin-right: 00%;
+}
+
+.solcol3{
+    text-align: left;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solcol3 h1{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.solcol3 p2{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.adultpic{
+    margin-left: 10%;
+}
+
+.workshop{
+    min-height: 50vh;
+    width: 100%;
+    background: linear-gradient(#F5E4CC, #ffffff);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.workshop h1{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workshop p1{
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+
+.workshop p2{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.eventrow{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event1{
+    flex-basis: 31%;
+    background: #FAF0BF;
+    box-sizing: border-box;
+    border-radius: 9px;
+    margin-bottom: 4%;
+    padding: 20px 12px;
+    transition: 0.5s
+}
+
+.event1:hover{
+    box-shadow: 0 0 30px 3px rgba(0,0,0,0.7);
+}
+
+.contact{
+    padding-top: 5%;
+    padding-left: 10%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.contact p1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+
+.contact p2{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.input{
+    width: 400px;
+    height: 40px;
+    display: flex;
+}
+
+.textarea{
+    display: flex;
+    height: 100px;
+    width:400px;
+    
+}
+
+.submitbtn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #a1785c;
+    position: relative;
+    float: center;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.submitbtn:hover{
+    border: none;
+    background: #795644;
+    transition: 0.5s;
+}
+
+@media(max-width: 700px){
+    .solcol1{
+        text-align: center;
+        flex-direction: column;
+    }    
+    
+    .solcol2{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .solcol3{
+        text-align: center;
+        flex-direction: column;
+    }
+    .solcol1 p2{
+        padding-right: 0%;
+    }
+    
+    .sol1img{
+        max-width: 100%;
+        float: left;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    .workshop{
+        text-align: center;
+    }
+    
+    .workshop h1{
+        font-size: 35px;
+    }
+    
+    .workshop p1{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .eventrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        margin: 0%;
+    }
+    
+    .contact p2{
+        display: flex;
+        margin: 3%;
+    }
+    
+    .input{
+        width: 75%;
+        height: 40px;
+        display: flex;
+    }
+    .textarea{
+        width: 75%;
+        height: 40px;
+        display: flex;
+    }
+}
+
+/*------references------*/
+.embedpdf{
+    padding-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 10px;
+}
+
+.reference-header{
+    height: 250vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), #F5E4CC, #FAF0BF, #ffffff);
+    text-align: center;
+    color: #000;
+}
+
+.reference-header h1{
+    font-size: 50px;
+    display: inline-block;
+     border-bottom: 3px solid #000;
+}
+
+.reference-header h2{
+    font-size: 50px;
+    display: inline-block;
+     border-bottom: 3px solid #000;
+}
+
+@media(max-width: 700px){
+    .sources{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .embedpdf{
+        max-width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .embedcopyright{
+        max-width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
